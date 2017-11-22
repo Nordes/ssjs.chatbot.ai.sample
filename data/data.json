@@ -2,13 +2,12 @@
     "topics": {
         "suba": {
             "name": "suba",
-            "flags": {
-                "stay": false
-            },
+            "flags": {},
             "keywords": [],
             "filter": null,
             "gambits": [
-                "q96NYGAR"
+                "ndGo8Oxm",
+                "jE3ZxKZT"
             ]
         },
         "random": {
@@ -19,14 +18,15 @@
             "keywords": [],
             "filter": null,
             "gambits": [
-                "bOYZbN6D",
-                "P1XPWB0d",
-                "am5G9TLH"
+                "uwW2rrsu",
+                "0JohIjVy",
+                "xgrJzk84",
+                "h4f58ESI"
             ]
         }
     },
     "gambits": {
-        "q96NYGAR": {
+        "ndGo8Oxm": {
             "trigger": {
                 "flags": {},
                 "filter": null,
@@ -35,13 +35,28 @@
                 "clean": "the supermarket is colorful"
             },
             "replies": [
-                "LV5Kt1Kl"
+                "RTlLcvCM"
             ],
             "conditional": null,
             "conversation": null,
             "topic": "suba"
         },
-        "bOYZbN6D": {
+        "jE3ZxKZT": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "colorful",
+                "clean": "colorful"
+            },
+            "replies": [
+                "Cc3BaYFE"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "suba"
+        },
+        "uwW2rrsu": {
             "trigger": {
                 "flags": {},
                 "filter": "^hasTag('hello')",
@@ -50,18 +65,18 @@
                 "clean": "\\s*((?:[^\\s]+\\s+){0,1}(?:[^\\s]+)?)\\s*"
             },
             "replies": [
-                "EFKaiq9K",
-                "mj0RFbin",
-                "ki8ugCY5",
-                "g96Y7nJO",
-                "iO8muqLO",
-                "FE8E5dh5"
+                "DoRca8z6",
+                "XSCb5VXW",
+                "A1MoH5CQ",
+                "iCZL1lS7",
+                "nVr22DzS",
+                "0C7JXz8G"
             ],
             "conditional": null,
             "conversation": null,
             "topic": "random"
         },
-        "P1XPWB0d": {
+        "0JohIjVy": {
             "trigger": {
                 "flags": {},
                 "filter": null,
@@ -70,13 +85,28 @@
                 "clean": "show(?:(?=^|\\s)\\s*(?:.*)(?=\\s|$)\\s*)?car"
             },
             "replies": [
-                "StS2Gz8b"
+                "GzZQzO4K"
             ],
             "conditional": null,
             "conversation": null,
             "topic": "random"
         },
-        "am5G9TLH": {
+        "xgrJzk84": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "* supermarket *",
+                "clean": "(?:(?=^|\\s)\\s*(?:.*)(?=\\s|$)\\s*)?supermarket(?:(?=^|\\s)\\s*(?:.*)(?=\\s|$)\\s*)?"
+            },
+            "replies": [
+                "gv2G82pX"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "h4f58ESI": {
             "trigger": {
                 "flags": {},
                 "filter": null,
@@ -85,7 +115,7 @@
                 "clean": "(?:(?=^|\\s)\\s*(?:.*)(?=\\s|$)\\s*)?"
             },
             "replies": [
-                "5X6dvrVA"
+                "lJ89QP4F"
             ],
             "conditional": null,
             "conversation": null,
@@ -93,54 +123,64 @@
         }
     },
     "replies": {
-        "LV5Kt1Kl": {
+        "RTlLcvCM": {
             "string": "{delay=1} Hey there!\\n{delay=2} Nice to meet you.\\n{delay=3} Let me know if you need anything!",
             "filter": null,
             "keep": false
         },
-        "EFKaiq9K": {
-            "string": "Hi!",
+        "Cc3BaYFE": {
+            "string": "{delay=1} Hey there!\\n{delay=2} Nice to meet you.\\n{delay=3} Let me know if you need anything!",
             "filter": null,
             "keep": false
         },
-        "mj0RFbin": {
-            "string": "Hi, how are you?",
+        "DoRca8z6": {
+            "string": "Hi! {topic=suba}",
             "filter": null,
             "keep": false
         },
-        "ki8ugCY5": {
-            "string": "How are you?",
+        "XSCb5VXW": {
+            "string": "Hi, how are you? {topic=suba}",
             "filter": null,
             "keep": false
         },
-        "g96Y7nJO": {
-            "string": "Hello",
+        "A1MoH5CQ": {
+            "string": "How are you? {topic=suba}",
             "filter": null,
             "keep": false
         },
-        "iO8muqLO": {
-            "string": "Howdy",
+        "iCZL1lS7": {
+            "string": "Hello {topic=suba}",
             "filter": null,
             "keep": false
         },
-        "FE8E5dh5": {
-            "string": "Ola",
+        "nVr22DzS": {
+            "string": "Howdy {topic=suba}",
             "filter": null,
             "keep": false
         },
-        "StS2Gz8b": {
+        "0C7JXz8G": {
+            "string": "Ola {topic=suba}",
+            "filter": null,
+            "keep": false
+        },
+        "GzZQzO4K": {
             "string": "Here’s my car: ^addMessageProp(\"img\",\"http://www.exoticspotter.com/images/19/18281.jpg\")",
             "filter": null,
             "keep": false
         },
-        "5X6dvrVA": {
+        "gv2G82pX": {
+            "string": "Yay a supermarket",
+            "filter": null,
+            "keep": false
+        },
+        "lJ89QP4F": {
             "string": "Please ask something I can answer",
             "filter": null,
             "keep": false
         }
     },
     "checksums": {
-        "./chat/main.ss": "6e35d7366ee1187ee2d6023e7b00747a9eb76ccb"
+        "./chat/main.ss": "0dd38d711fdd476e22c29f62917499dd2ec0dca2"
     },
     "version": 1
 }

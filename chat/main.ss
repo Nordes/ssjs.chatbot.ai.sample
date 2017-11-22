@@ -6,16 +6,25 @@
 - Howdy
 - Ola
 
+// Example of switching to a topic
 + show * car
-- Here’s my car: ^addMessageProp("img","http://www.exoticspotter.com/images/19/18281.jpg")
+- Here’s my car: ^addMessageProp("img","http://www.exoticspotter.com/images/19/18281.jpg")  {topic=suba}
+
+> topic suba
++ the supermarket is colorful
+- {delay=1} Hey there!\n
+^ {delay=2} Nice to meet you.\n
+^ {delay=3} Let me know if you need anything!
+
++ colorful
+- {delay=1} Hey there!\n
+^ {delay=2} Nice to meet you.\n
+^ {delay=3} Let me know if you need anything!
+
+< topic
+
++ * supermarket *
+- Yay a supermarket
 
 + *
 - Please ask something I can answer
-
-> topic suba {system, nostay}
-  + the supermarket is colorful
-  - {delay=1} Hey there!\n
-  ^ {delay=2} Nice to meet you.\n
-  ^ {delay=3} Let me know if you need anything!
-< topic
-
