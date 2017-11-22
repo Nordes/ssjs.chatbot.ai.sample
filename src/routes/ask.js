@@ -6,6 +6,8 @@ var controller = (app) => {
     var bot = app.bot
   
     router.get('/', function (req, res) {
+      // Details on features in tests: https://github.com/superscriptjs/superscript/tree/master/test/fixtures
+      //
       // Query parameters:
       //  - q : question (User query input)
       //  - tz: timezone (Ex.: Asia/Tokyo [To be defined])

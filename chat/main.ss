@@ -1,3 +1,5 @@
+// Details for conversation https://github.com/superscriptjs/superscript/wiki/Conversations
+
 + {^hasTag('hello')} *~2
 - Hi!
 - Hi, how are you?
@@ -5,6 +7,9 @@
 - Hello
 - Howdy
 - Ola
+
++ こんいちわ
+- おげんきですか？
 
 // Example of switching to a topic
 + show * car
