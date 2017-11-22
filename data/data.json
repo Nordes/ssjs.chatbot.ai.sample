@@ -1,0 +1,146 @@
+{
+    "topics": {
+        "suba": {
+            "name": "suba",
+            "flags": {
+                "stay": false
+            },
+            "keywords": [],
+            "filter": null,
+            "gambits": [
+                "q96NYGAR"
+            ]
+        },
+        "random": {
+            "name": "random",
+            "flags": {
+                "keep": "keep"
+            },
+            "keywords": [],
+            "filter": null,
+            "gambits": [
+                "bOYZbN6D",
+                "P1XPWB0d",
+                "am5G9TLH"
+            ]
+        }
+    },
+    "gambits": {
+        "q96NYGAR": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "the supermarket is colorful",
+                "clean": "the supermarket is colorful"
+            },
+            "replies": [
+                "LV5Kt1Kl"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "suba"
+        },
+        "bOYZbN6D": {
+            "trigger": {
+                "flags": {},
+                "filter": "^hasTag('hello')",
+                "question": false,
+                "raw": "*~2",
+                "clean": "\\s*((?:[^\\s]+\\s+){0,1}(?:[^\\s]+)?)\\s*"
+            },
+            "replies": [
+                "EFKaiq9K",
+                "mj0RFbin",
+                "ki8ugCY5",
+                "g96Y7nJO",
+                "iO8muqLO",
+                "FE8E5dh5"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "P1XPWB0d": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "show * car",
+                "clean": "show(?:(?=^|\\s)\\s*(?:.*)(?=\\s|$)\\s*)?car"
+            },
+            "replies": [
+                "StS2Gz8b"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "am5G9TLH": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "*",
+                "clean": "(?:(?=^|\\s)\\s*(?:.*)(?=\\s|$)\\s*)?"
+            },
+            "replies": [
+                "5X6dvrVA"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        }
+    },
+    "replies": {
+        "LV5Kt1Kl": {
+            "string": "{delay=1} Hey there!\\n{delay=2} Nice to meet you.\\n{delay=3} Let me know if you need anything!",
+            "filter": null,
+            "keep": false
+        },
+        "EFKaiq9K": {
+            "string": "Hi!",
+            "filter": null,
+            "keep": false
+        },
+        "mj0RFbin": {
+            "string": "Hi, how are you?",
+            "filter": null,
+            "keep": false
+        },
+        "ki8ugCY5": {
+            "string": "How are you?",
+            "filter": null,
+            "keep": false
+        },
+        "g96Y7nJO": {
+            "string": "Hello",
+            "filter": null,
+            "keep": false
+        },
+        "iO8muqLO": {
+            "string": "Howdy",
+            "filter": null,
+            "keep": false
+        },
+        "FE8E5dh5": {
+            "string": "Ola",
+            "filter": null,
+            "keep": false
+        },
+        "StS2Gz8b": {
+            "string": "Here’s my car: ^addMessageProp(\"img\",\"http://www.exoticspotter.com/images/19/18281.jpg\")",
+            "filter": null,
+            "keep": false
+        },
+        "5X6dvrVA": {
+            "string": "Please ask something I can answer",
+            "filter": null,
+            "keep": false
+        }
+    },
+    "checksums": {
+        "./chat/main.ss": "6e35d7366ee1187ee2d6023e7b00747a9eb76ccb"
+    },
+    "version": 1
+}
