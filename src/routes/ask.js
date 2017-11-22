@@ -23,28 +23,15 @@ var controller = (app) => {
         // bot.reply(userId, messageString, callback, extraScope) // ExtraScope ???
         // bot.directReply(userId, topicName, messageString, callback) // This is like doing a topicRedirect
         // bot.message(messageString, callBack)
-        bot.getUser('user1', (err, something) => { console.log(something) })
+        var userId = req.query['user.id'] ? req.query['user.id'] : req.query['conversation.id']
+        bot.getUser(userId, (err, something) => { console.log(something) })
         if (req.query.topic) {
-          return bot.directReply('user1', req.query.topic, req.query.q, (err, reply) => {
-            // Base properties
-            // [replyId, createdAt, string, topicName, subReplies, debug]
-            // Metadata: [subReplies, {other properties}]
-            res.json({
-              id: reply.id,
-              reply: reply.string,
-              metadata: addMetadata(reply),
-              debugInfo: req.query.debug ? reply : null// Debug information
-            });
+          return bot.directReply(userId, req.query.topic, req.query.q, (err, reply) => {
+            res.json(getReply(reply, req.query.debug));
           });
         } else {
-          return bot.reply('user1', req.query.q, (err, reply) => {
-  
-            res.json({
-              id: reply.id,
-              reply: reply.string,
-              metadata: addMetadata(reply),
-              debugInfo: req.query.debug ? reply : null// Debug information
-            });
+          return bot.reply(userId, req.query.q, (err, reply) => {
+            res.json(getReply(reply, req.query.debug));
           });
         }
       }
@@ -54,6 +41,20 @@ var controller = (app) => {
   
     return router
   }
+function getReply(reply, debug) {
+
+  var response = {
+    id: reply.id,
+    reply: reply.string,
+    metadata: addMetadata(reply),
+  }
+
+  if (debug) {
+    response.debug = reply
+  }
+
+  return response
+}
 
 function addMetadata(reply) {
   var unwantedKeys = ['replyId', 'createdAt', 'string', 'debug']
@@ -62,7 +63,6 @@ function addMetadata(reply) {
   var metadata = {}
 
   keys.forEach(elt => {
-    if (elt)
     metadata[elt] = reply[elt]
   });
 

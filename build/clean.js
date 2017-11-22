@@ -7,3 +7,9 @@ rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
     throw err
   }
 })
+
+rm(path.join(config.build.assetsRoot, "../logs"), err => {
+  if (err) {
+    throw err
+  }
+})
