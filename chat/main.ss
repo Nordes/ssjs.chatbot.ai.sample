@@ -25,6 +25,3 @@
 
 + * supermarket *
 - Yay a supermarket
-
-+ *
-- Please ask something I can answer

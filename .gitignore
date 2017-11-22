@@ -1,5 +1,9 @@
 # lib
 lib/*
+
+# compiled data
+data/*
+
 # Logs
 logs
 *.log
