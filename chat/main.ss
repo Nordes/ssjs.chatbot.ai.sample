@@ -17,7 +17,7 @@
 
 > topic suba
 + the supermarket is colorful
-- {delay=1} Hey there!\n
+- Hey there!\n
 ^ {delay=2} Nice to meet you.\n
 ^ {delay=3} Let me know if you need anything!
 
@@ -30,3 +30,9 @@
 
 + * supermarket *
 - Yay a supermarket
+
++ generate special metadata
+- callSomeFunction to add some properties in the metadata
+
++ print my stuff
+- Ok, check printer ${tag1}, it should be ready soon
