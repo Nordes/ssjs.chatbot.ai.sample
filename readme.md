@@ -29,3 +29,6 @@ npm run start
 
 # The good
 * Can be multi-tenant (in this example we have only one bot)
+
+# Interesting links
+* https://github.com/superscriptjs/superscript/issues/121 : Script to clear the DB (maybe?)
