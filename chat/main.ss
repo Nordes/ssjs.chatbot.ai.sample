@@ -13,7 +13,7 @@
 
 // Example of switching to a topic
 + show * car
-- Here’s my car: ^addMessageProp("img","http://www.exoticspotter.com/images/19/18281.jpg")  {topic=suba}
+- Here’s my car: ^addMessageProp("img",{"name": "Sport car", contentType: "image/jpg", "uri": "http://www.exoticspotter.com/images/19/18281.jpg"})  {topic=suba}
 
 > topic suba
 + the supermarket is colorful

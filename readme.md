@@ -11,7 +11,7 @@ This will use Express by default. Don't forget to configure your configuration i
 ```bash
 npm install
 npm run parse
-npm run start
+npm run dev
 ```
 
 # To-do
@@ -32,3 +32,6 @@ npm run start
 
 # Interesting links
 * https://github.com/superscriptjs/superscript/issues/121 : Script to clear the DB (maybe?)
+
+# Some reading on heroku
+* https://stackoverflow.com/questions/42159175/connecting-heroku-app-to-atlas-mongodb-cloud-service
